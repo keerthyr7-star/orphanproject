@@ -1,5 +1,5 @@
 import React from 'react'
-import './Volunteers.css'
+import './Adminprofile.css'
 import logo from '../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -11,35 +11,33 @@ import {
   faLocationDot
 } from '@fortawesome/free-solid-svg-icons'
 
-
-const Volunteers = () => {
+const Adminprofile = () => {
   return (
     <>
-   <div className="Dashboard-container">
-    <header>
-                <img src={logo} alt="" />
-            
+      <div className="Dashboard-container">
+         <header>
+                    <img src={logo} alt="" />
+        
                     <div className="headerdetail">
-                          <h2>HopeHands</h2>
+                      <h2>HopeHands</h2>
                     <div className="pdeatil">
-                          <p>chennai, Tamilnadu</p>
+                      <p>chennai, Tamilnadu</p>
                     </div>
                     </div>     
-            
-                    <div className="headerdetails2">
-                        <h1>Dashboard</h1> 
-            
+        
+                  <div className="headerdetails2">
+                    <h1>Admin profile</h1> 
+        
                     <div className="headericons">
-                        <i className="fa-solid fa-magnifying-glass"></i>
-                        <i className="fa-solid fa-bell"></i>
-                        <button>Reports</button>
-                        </div>
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                    <i className="fa-solid fa-bell"></i>
+                    <button>Reports</button>
                     </div>
-                       
-                   </header>
+                  </div>
+                   
+               </header>
 
-
-                   <aside>
+                 <aside>
            
            <div className="sidemain">
               <h4>Main</h4>
@@ -92,185 +90,110 @@ const Volunteers = () => {
        </aside>
 
         <main>
-
-             <div className="volunteersMain">
-                <h1>Nearby Shelters</h1>
-                <button className='volunteersBtn'>Add Shelters</button>
-            </div>
-
-            <div className="volunteerscontainer">
-
-            <div className="volunteersContainer">
-                 <i class="fa-solid fa-users"></i>
-                 <h1>86</h1>
-                <p>Total volunteers</p>
-            </div>
-
-            <div className="volunteersContainer">
-               <i class="fa-solid fa-circle-check"></i>
-                 <h1>86</h1>
-                <p>Total volunteers</p>
-            </div>
-
-            <div className="volunteersContainer">
-               <i class="fa-solid fa-briefcase-medical"></i>
-                 <h1>86</h1>
-                <p>Total volunteers</p>
-            </div>
-
-            <div className="volunteersContainer">
-               <i class="fa-solid fa-medal"></i>
-                 <h1>86</h1>
-                <p>Total volunteers</p>
-            </div>
-
-            </div>
-
-            <div className="findings">
-
-            <div className="iconsplusshelterfind">
-            <i class="fa-solid fa-location-dot"></i>
-            <div className="shelterFindings">
+            <div className="adminProfilecontainer">
                
-                <h1>Find volunteers near a report</h1>
-            </div>
-        </div>
+                    <div className="admincol1">
 
-            <div className="selectplusfilter">
-            <select name="" id="">
-                <option value="">Status all:</option>
-                <option value="">Nearby Volunteers</option>
-                <option value="">On duty</option>
-            </select>
+                        <div className="adminprofile">
+                            <h1>RN</h1>
+                           <label htmlFor="upload">
+                                  <i className="fa-solid fa-camera"></i>
+                           </label>
 
+                            <input type="file" id="upload" hidden />
+                        </div>
 
-            <div className="filterShel">
-                <i className="fa-solid fa-filter none"></i>
-                <input type="text" placeholder="Search volunteers..." />
-            </div>
-            </div>
+                        <div className="adminDetails">
+                            <h1>Rajendran R.V</h1>
+                            <p>Founder & Admin</p>
+                        </div>
 
-        </div>
-            <div className="Allvolunteers">
-            <div className="volunteersec">
+                        <div className="adminRole">
+                            <p>Super admin</p>
+                        </div>
 
-              <div className="vol1">
-                <h1>RK</h1>
+                        <div className="editbtndetails">
+                            <button>Edit profile</button>
+                        </div>
+                      
+                    </div>
 
-                <div className="volunteersName">
-                    <p className='aname'>Rajendran </p>
-                    <p>Adyar Zone</p>
-                </div>
+                    <div className="admincols">
 
-                <p className='volunteersP'>Available</p>
-               </div>
+                        <div className="admincol2">
+                            <p>Personal information</p>
 
-            <div className="mainresDet">
+                            <form action="">
+                            <div className="adminform">
+                               
+                                <div className="labinpmain">
+                                    <div className="labelinput">
+                                        <label htmlFor="" >Full name</label>
+                                        <input type="text"  placeholder='Ranjendran R.V'/>
+                                    </div>
 
-              <div className="mainresDetcol">
-                
-                <div className="mainressubDet">
-                <i class="fa-solid fa-star"></i>
-                  <p>28</p>
-                </div>
-                  <p>rescues</p>
-                
-              </div>
-              <div className="mainresDetcol">
-                <i class="fa-solid fa-phone"></i>
-                <p>98XXXXXXX12</p>
-              </div>
-              
-            </div>
-              
-                <div className="buttonsres">
-                    <button>Assign case</button>
-                    <i class="fa-solid fa-phone"></i>
-                </div>
+                                    <div className="labelinput">
+                                        <label htmlFor="">Phone</label>
+                                        <input type="number" placeholder='98XXXXXX00'/>
+                                    </div>
 
-            </div>
+                                    <div className="labelinput">
+                                        <label htmlFor="">Email</label>
+                                        <input type="email" placeholder='rajendrenrv@gmail.com' />
+                                    </div>
 
+                                    <div className="labelinput">
+                                        <label htmlFor="">Role</label>
+                                        <input type="text" placeholder='Super admin'/>
 
-          <div className="volunteersec">
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div className="admincol3">
+                        
+                        <p>Organization Details</p>
 
-              <div className="vol1">
-                <h1 className='blueir'>IR</h1>
+                            <form action="">
+                            <div className="adminform">
+                               
+                                <div className="labinpmain">
+                                    <div className="labelinput">
+                                        <label htmlFor="" >NGO name</label>
+                                        <input type="text"  placeholder='Ranjendran R.V'/>
+                                    </div>
 
-                <div className="volunteersName">
-                    <p className='aname'>Indhirani</p>
-                    <p>Mylopore Zone</p>
-                </div>
+                                    <div className="labelinput">
+                                        <label htmlFor="">Registration no</label>
+                                        <input type="number" placeholder='98XXXXXX00'/>
+                                    </div>
 
-                <p className='volunteersP blue'>On a case</p>
-               </div>
+                                    <div className="labelinput full">
+                                        <label htmlFor="" >Address</label>
+                                         <textarea
+                                            placeholder="Chennai, Tamil Nadu"
+                                        ></textarea>
+                                    </div>      
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>                         
+                     </div>
 
-            <div className="mainresDet">
-
-              <div className="mainresDetcol">
-                
-                <div className="mainressubDet">
-                <i class="fa-solid fa-star"></i>
-                  <p>28</p>
-                </div>
-                  <p>rescues</p>
-                
-              </div>
-              <div className="mainresDetcol">
-                <i class="fa-solid fa-phone"></i>
-                <p>98XXXXXXX12</p>
-              </div>
-              
-            </div>
-              
-                <div className="buttonsres">
-                    <button>Assign case</button>
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-
-            </div>
-
-          <div className="volunteersecdisabled">
-
-              <div className="vol1">
-                <h1 className='disabledh1'>KA</h1>
-
-                <div className="volunteersName">
-                    <p className='aname'>Ravi Kumar</p>
-                    <p>Adyar Zone</p>
-                </div>
-
-                <p className='volunteersP disabled'>Offline</p>
-               </div>
-
-            <div className="mainresDet">
-
-              <div className="mainresDetcol">
-                
-                <div className="mainressubDet">
-                <i class="fa-solid fa-star"></i>
-                  <p>28</p>
-                </div>
-                  <p>rescues</p>
-                
-              </div>
-              <div className="mainresDetcol">
-                <i class="fa-solid fa-phone"></i>
-                <p>98XXXXXXX12</p>
-              </div>
-              
-            </div>
-              
-                <div className="buttonsres">
-                    <button>Assign case</button>
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-
-            </div>
+                      <div className="platformOverview">
+                        <p>Platform overview</p>
 
 
+                        
 
-            </div>
-        </main>
+                     </div>
+
+
+                    </main>
+
+
 
                 <footer>
               
@@ -380,16 +303,10 @@ const Volunteers = () => {
                     </div>
               
                      </footer>
-              
+                    
+                    </div>
+                 </>
+                )
+        }
 
-
-
-
-
-    
-   </div>
-   </>
-  )
-}
-
-export default Volunteers
+export default Adminprofile
