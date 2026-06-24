@@ -7,7 +7,10 @@ import './index.css'
 // import Myreports from './components/Myreports.jsx'
 // import Shelters from './components/Shelters.jsx'
 // import Volunteers from './components/Volunteers.jsx'
-import Adminprofile from './components/Adminprofile.jsx'
+// import Adminprofile from './components/Adminprofile.jsx'
+import Userprofile from './components/Userprofile.jsx'
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
@@ -16,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Myreports/> */}
     {/* <Shelters/> */}
     {/* <Volunteers/> */}
-    <Adminprofile/>
+    {/* <Adminprofile/> */}
+    <Userprofile/>
   </StrictMode>
 )

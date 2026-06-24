@@ -182,18 +182,63 @@ const Adminprofile = () => {
                     </div>                         
                      </div>
 
-                      <div className="platformOverview">
-                        <p>Platform overview</p>
+                    <div className="platformContainer">
+                        <p className='pp'>Platform overview</p>
 
+                        <div className="boxes">
 
-                        
+                          <div className="adminreports">
+                            <i className="fa-solid fa-camera"></i>
+                            <h1>86</h1>
+                            <p>Total reports</p>
+                         </div>
 
-                     </div>
+                          <div className="adminreports">
+                             <i className="fa-solid fa-house"></i>  
+                            <h1>86</h1>
+                            <p>Shelters onboarded</p>
+                         </div>
 
+                         <div className="adminreports">
+                             <i className="fa-solid fa-user-large"></i> 
+                            <h1>86</h1>
+                            <p>Registered volunteers</p>
+                         </div>
 
+                         <div className="adminreports">
+                             <i className="fa-solid fa-circle-check"></i> 
+                            <h1>869</h1>
+                            <p>Cases resolved</p>
+                         </div>
+
+                        </div>
+                    </div>
+                      <div className="recentactivity">
+
+                        <p className='pp'>Recent admin activity</p>
+                        <div className="adminpageicons">
+                          <div className="adminpageicon1">
+                            <i className="fa-solid fa-circle-check green"></i> 
+                            <p>Approved Snehavanam Home as a registered shelter</p>
+                              <p className='hrs'>3hrs ago</p>
+                          </div>
+
+                          <div className="adminpageicon1">
+                            <i className="fa-solid fa-user-check blue"></i> 
+                            <p>Verified 3 new volunteer sign-ups</p>
+                             <p className='hrs'>Yesterday</p>
+                          </div>
+
+                          <div className="adminpageicon1">
+                            <i className="fa-solid fa-user-pen red"></i>
+                            <p>Reassigned a stalled case in Velachery zone</p>
+                             <p className='hrs'>2 days ago</p>
+                          </div>
+                        </div>
+                      </div>
                     </main>
 
-
+ 
 
                 <footer>
               
