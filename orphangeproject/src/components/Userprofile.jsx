@@ -41,7 +41,7 @@ const Userprofile = () => {
                          
                      </header>
 
-                      <aside>
+          <aside>
            
            <div className="sidemain">
               <h4>Main</h4>

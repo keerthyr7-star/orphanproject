@@ -8,8 +8,8 @@ import './index.css'
 // import Shelters from './components/Shelters.jsx'
 // import Volunteers from './components/Volunteers.jsx'
 // import Adminprofile from './components/Adminprofile.jsx'
-import Userprofile from './components/Userprofile.jsx'
-
+// import Userprofile from './components/Userprofile.jsx'
+import Settings from './components/Settings.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +20,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Shelters/> */}
     {/* <Volunteers/> */}
     {/* <Adminprofile/> */}
-    <Userprofile/>
+    {/* <Userprofile/> */}
+    <Settings/>
   </StrictMode>
 )

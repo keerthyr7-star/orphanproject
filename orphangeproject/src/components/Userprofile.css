@@ -12,13 +12,8 @@
     "header header"
     "sidemenu mainpage"
     "footer footer";
-
     height: 100vh;
 }
-
-
-
-
 header{
     grid-area: header;
     display: flex;
