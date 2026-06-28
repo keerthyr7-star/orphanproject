@@ -1,0 +1,94 @@
+.register-form{
+     width: 100%;
+     max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: auto;
+}
+
+.form-Headings{
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.input-group label{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputplusicon{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inputplusicon input{
+    width: 100%;
+    height: 42px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.err{
+    color: red;
+    font-size: 13px;
+}
+
+button{
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(55, 160, 55)
+}
+.bottomDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signDiv{
+    text-decoration: none;
+    color: green;
+}
+
+.signIndetails{
+    text-decoration: none;
+    color: green;
+}
+
+@media (max-width: 480px) {
+    .register-form {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .inputplusicon input {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    button {
+        height: 38px;
+        font-size: 14px;
+    }
+}
